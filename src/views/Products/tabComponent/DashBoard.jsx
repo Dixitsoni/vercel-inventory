@@ -65,8 +65,6 @@ function DashBoard({
     }
   };
 
-  console.log(userData, "userDatt");
-
   const changeHandle = (e) => {
     const { name, value } = e.target;
     if (e.target.files) {

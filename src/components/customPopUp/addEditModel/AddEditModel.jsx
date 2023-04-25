@@ -14,7 +14,7 @@ function AddEditPopUp({
   setLogo,
 }) {
 
-  console.log(userData,'userData')
+  console.log(userData, 'userData')
   return (
     <div className="width_container">
       <div>
@@ -35,7 +35,6 @@ function AddEditPopUp({
         </div>
         <div className="">
           <div className="text_align">
-            <Typography sx={{ color: "darkblue" }}>click on image</Typography>
             <img
               width={150}
               height={120}
@@ -44,6 +43,7 @@ function AddEditPopUp({
               }
               alt="productImage"
             />
+            <Typography sx={{ color: "darkblue" }}>Upload Image</Typography>
             <input name="productImage" type={"file"} onChange={changeHandle} />
           </div>
           <div className="margin">
@@ -185,7 +185,7 @@ function AddEditPopUp({
               aria-describedby={"my-helper-text1"}
               required
             />
-             <CustomInput
+            <CustomInput
               name={"date"}
               type={'date'}
               value={userData?.date}

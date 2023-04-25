@@ -119,7 +119,7 @@ const ViewProductDetail = ({ setOpenPopUp, productData }) => {
           <CustomTable data={[productData]} columns={column} pagination />
         </div>
       </div>
-      <div style={{ position: "absolute", right: 20, bottom: 20 }}>
+      <div style={{ position: "absolute", right: 20, bottom: 40 }}>
         <CustomButton
           value={"Print Bill"}
           variant={"contained"}

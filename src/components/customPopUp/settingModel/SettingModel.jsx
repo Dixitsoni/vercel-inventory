@@ -5,6 +5,7 @@ import Cookies from "universal-cookie";
 import ChangePass from "../../../assets/images/lock.webp";
 import profile from "../../../assets/images/images.jpeg";
 import LogoutImage from "../../../assets/images/logout-8.png";
+import { token } from "../../../utils";
 
 const SettingModel = ({ setSetting }) => {
   const navigate = useNavigate();
@@ -16,6 +17,7 @@ const SettingModel = ({ setSetting }) => {
   };
 
   const logOut = () => {
+    console.log('hjsahdsadsadlsakdasdklk')
     cookies.remove("x-auth-token");
     navigate("/inventory", { replace: true });
   };
@@ -62,13 +64,13 @@ const SettingModel = ({ setSetting }) => {
           ></Avatar>
           <span style={{ marginLeft: "20px" }}>Profile</span>
         </li>
-        <li className="li_setting li_style" onClick={logOut}>
+        <li className="li_setting li_style">
           <Avatar
             sx={{ width: "30px", height: "30px" }}
             src={LogoutImage}
             alt="logoutImage"
           ></Avatar>
-          <span style={{ marginLeft: "20px" }}>Logout</span>
+          <span style={{ marginLeft: "20px" }} onClick={logOut}>Logout</span>
         </li>
       </ul>
     </div>

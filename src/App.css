@@ -182,9 +182,10 @@ p.MuiTypography-root.MuiTypography-body1.css-oyo7gs-MuiTypography-root {
 .text_align input {
   position: absolute;
   left: 0;
-  width: 133px; 
+  width: 133px;
   opacity: 0;
-  height: 100px;
+  z-index: 1;
+  top: 126px;
 }
 
 .text_align
@@ -479,4 +480,8 @@ table tr td {
   .MuiBox-root.css-1gsv261 {
     margin-top: 106px;
   }
+}
+
+.MuiModal-root.css-5bmqrt{
+  margin-top: 0px !important;
 }

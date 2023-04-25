@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 import CustomInput from "../../components/customInput/CustomInput";
 import CustomButton from "../../components/CustomButton/CustomButton";
-import { setToken } from "../../utils/index";
 import { useNavigate } from "react-router-dom";
 import passwordIcon from "../../assets/images/lock.webp";
 import profile from "../../assets/images/computer-icons-user-profile-avatar-avatar.jpg";
+import { setToken } from "../../utils/validation";
 
 function Login() {
   const [userData, setUserData] = useState({
@@ -61,7 +61,7 @@ function Login() {
   };
 
   return (
-    <>
+    <div style={{marginTop:'10%'}}>
      {userExist && <Typography
         sx={{
           backgroundColor: "red",
@@ -132,7 +132,7 @@ function Login() {
           </CardContent>
         </div>
       </Card>
-    </>
+    </div>
   );
 }
 

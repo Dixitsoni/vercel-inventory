@@ -1,3 +1,6 @@
+import Cookies from "universal-cookie";
+
+const cookie = new Cookies();
 
 export const formatDate = (date) => {
     var day = date.getDate();
@@ -7,3 +10,5 @@ export const formatDate = (date) => {
     var year = date.getFullYear();
     return year + "-" + month + "-" + day;
 }
+
+export const setToken = (token) => cookie.set("x-auth-token", token);
