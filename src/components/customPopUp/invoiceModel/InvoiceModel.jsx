@@ -103,6 +103,19 @@ const InvoiceModel = ({
               aria-describedby={"my-helper-text1"}
               required
             />
+            <CustomInput
+              name={"address"}
+              value={invoiceInfoData?.address}
+              handleChange={changeHandle}
+              helperText={
+                !invoiceInfoData?.unitPrice ? "please Enter Unit Price" : ""
+              }
+              id="my-input1"
+              htmlFor="my-input1"
+              children={"Address"}
+              aria-describedby={"my-helper-text1"}
+              required
+            />
           </div>
           <div className="d_flex">
             <div>

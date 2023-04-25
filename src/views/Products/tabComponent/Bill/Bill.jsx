@@ -267,7 +267,7 @@ const Bill = ({
 
   const addInvoiceData = () => {
     const getInvoiceValue = Object.values(invoiceInfoData);
-    if (getInvoiceValue.length === 7) {
+    if (getInvoiceValue.length === 8) {
       setInvoiceData([...invoiceData, invoiceInfoData]);
       setOpenPopUp({ open: false, type: "" });
     } else {

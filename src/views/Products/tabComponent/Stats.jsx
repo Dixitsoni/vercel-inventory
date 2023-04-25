@@ -37,7 +37,8 @@ function Stats({ data, setOpenPopUp, openPopUp }) {
                 backgroundColor: "white",
                 width: "20%",
                 mt: 5,
-                p: 5,
+                p: 4,
+                textAlign:'center'
               }}
             >
               <img
