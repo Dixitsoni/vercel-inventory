@@ -51,8 +51,9 @@ function Login() {
       fetch("https://fakestoreapi.com/auth/login", requestOptions)
         .then((res) => res.json())
         .then((json) => {
+          setUserExist("")
           setToken(json.token);
-          navigate("/inventory/dashboard", { replace: true });
+          navigate("/inventory", { replace: true });
         }).catch(() => {
           setUserExist("User not found")
         });

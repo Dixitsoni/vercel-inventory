@@ -12,19 +12,19 @@ const Error404 = lazy(() => import("../views/Error404"));
 
 
 export const privateRouteList = [
-  { path: "/inventory/dashboard", name: "DashBoard", exact: true, component: DashBoard },
-  { path: "/inventory/dashboard/profile", name: "Profile", exact: true, component: Profile },
+  { path: "/inventory", name: "DashBoard", exact: true, component: DashBoard },
+  { path: "/inventory/profile", name: "Profile", exact: true, component: Profile },
   {
-    path: "/inventory/dashboard/changePassword",
+    path: "/inventory/changePassword",
     name: "Change Password",
     exact: true,
     component: ChangePassword,
   },
-  { path: "*", name: "Profile", exact: true, component: Error404 },
+  { path: "*", name: "Error 404 Page", exact: true, component: Error404 },
 ];
 
 export const publicRouteList = [
-  { path: "/inventory", name: "LOGIN", exact: true, component: Login },
+  { path: "/login", name: "LOGIN", exact: true, component: Login },
   // { path: "/", name: "LOGIN", exact: true, component: Login },
 ];
 

@@ -19,7 +19,7 @@ const SettingModel = ({ setSetting }) => {
   const logOut = () => {
     console.log('hjsahdsadsadlsakdasdklk')
     cookies.remove("x-auth-token");
-    navigate("/inventory", { replace: true });
+    navigate("/login", { replace: true });
   };
 
   return (
@@ -44,7 +44,7 @@ const SettingModel = ({ setSetting }) => {
       >
         <li
           className="li_setting"
-          onClick={() => settingPathHandler("/inventory/dashboard/changePassword")}
+          onClick={() => settingPathHandler("/inventory/changePassword")}
         >
           <Avatar
             sx={{ width: "30px", height: "30px" }}
@@ -55,7 +55,7 @@ const SettingModel = ({ setSetting }) => {
         </li>
         <li
           className="li_setting li_style"
-          onClick={() => settingPathHandler("/inventory/dashboard/profile")}
+          onClick={() => settingPathHandler("/inventory/profile")}
         >
           <Avatar
             sx={{ width: "30px", height: "30px" }}

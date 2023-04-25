@@ -9,7 +9,7 @@ export const PrivateRouter = () => {
   const PrivateRoute = ({ children }) => {
     const token = isAuthenticated();
     if (!token) {
-      return <Navigate to={"/inventory"} replace={true} />;
+      return <Navigate to={"/login"} replace={true} />;
     }
     return children;
   };
@@ -34,7 +34,7 @@ export const PublicRouter = () => {
     const PublicRouter = ({ children }) => {
       const token = isAuthenticated();
       if (token) {
-        return <Navigate to={"/inventory/dashboard"} replace={true} />;
+        return <Navigate to={"/inventory"} replace={true} />;
       }
       return children;
     };
